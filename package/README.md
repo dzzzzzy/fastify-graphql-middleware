@@ -4,6 +4,8 @@
 
 install [body-parser](https://yarnpkg.com/en/package/body-parser) at first.
 
+Example:
+
 ```typescript
 import { MiddlewareConsumer, Module, NestModule } from "@nestjs/common";
 import { GraphQLFactory, GraphQLModule } from "@nestjs/graphql";
