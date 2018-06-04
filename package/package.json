@@ -1,5 +1,6 @@
 {
     "name": "graphql-fastify-middleware",
+    "version": "1.0.0",
     "description": "fastify graphql middleware for nestjs",
     "main": "index.js",
     "repository": {
