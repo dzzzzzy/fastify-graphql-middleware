@@ -3,10 +3,10 @@
 ## Installation
 
 ```bash
-# npm
+# npm install
 npm install fastify-graphql-middleware
 
-# yarn
+# yarn add
 yarn add fastify-graphql-middleware
 ```
 
@@ -19,6 +19,8 @@ Example:
 ```typescript
 import { MiddlewareConsumer, Module, NestModule } from "@nestjs/common";
 import { GraphQLFactory, GraphQLModule } from "@nestjs/graphql";
+import { fastifyGraphiQL, fastifyGraphQL } from "fastify-graphql-middleware";
+import * as bodyParser from "body-parser";
 
 @Module({
     imports: [GraphQLModule],
@@ -31,11 +33,11 @@ export class ApplicationModule implements NestModule {
         const schema = this.graphQLFactory.createSchema({ typeDefs });
 
         consumer
-            .apply(graphiQLFastify({ endpointURL: "/graphql" }))
+            .apply(fastifyGraphiQL({ endpointURL: "/graphql" }))
             .forRoutes("/graphiql")
             .apply(bodyParser.json())
             .forRoutes("/graphql")
-            .apply(graphQLFastify(req => ({ schema, rootValue: req })))
+            .apply(fastifyGraphQL(req => ({ schema, rootValue: req })))
             .forRoutes("/graphql");
     }
 }
