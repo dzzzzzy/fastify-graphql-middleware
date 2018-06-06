@@ -1,6 +1,6 @@
 {
-  "name": "graphql-fastify-middleware",
-  "version": "1.0.0",
+  "name": "fastify-graphql-middleware",
+  "version": "2.0.0",
   "author": "dzzzzzy",
   "scripts": {
     "build": "node --max_old_space_size=4096 ./node_modules/gulp/bin/gulp.js build",

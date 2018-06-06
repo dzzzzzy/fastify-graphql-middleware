@@ -1,11 +1,11 @@
 {
-    "name": "graphql-fastify-middleware",
-    "version": "1.0.0",
+    "name": "fastify-graphql-middleware",
+    "version": "2.0.0",
     "description": "fastify graphql middleware for nestjs",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dzzzzzy/graphql-fastify-middleware.git"
+        "url": "git+https://github.com/dzzzzzy/fastify-graphql-middleware.git"
     },
     "keywords": [
         "fastify",
@@ -19,7 +19,7 @@
         "apollo-server-module-graphiql": "^1.3.4"
     },
     "bugs": {
-        "url": "https://github.com/dzzzzzy/graphql-fastify-middleware.git/issues"
+        "url": "https://github.com/dzzzzzy/fastify-graphql-middleware.git/issues"
     },
-    "homepage": "https://github.com/dzzzzzy/graphql-fastify-middleware.git#readme"
+    "homepage": "https://github.com/dzzzzzy/fastify-graphql-middleware.git#readme"
 }
