@@ -1,5 +1,15 @@
 # graphql-fastify-middlewar
 
+## Installation
+
+```bash
+# npm
+npm install graphql-fastify-middlewar
+
+# yarn
+yarn add graphql-fastify-middlewar
+```
+
 ## Usage
 
 install [body-parser](https://yarnpkg.com/en/package/body-parser) at first.
