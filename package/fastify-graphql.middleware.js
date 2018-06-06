@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const apollo_server_core_1 = require("apollo-server-core");
-function graphQLFastify(options) {
+function fastifyGraphQL(options) {
     if (!options) {
         throw new Error("Apollo Server requires options.");
     }
@@ -28,6 +28,6 @@ function graphQLFastify(options) {
         });
     };
 }
-exports.graphQLFastify = graphQLFastify;
+exports.fastifyGraphQL = fastifyGraphQL;
 
-//# sourceMappingURL=graphql-fastify.middleware.js.map
+//# sourceMappingURL=fastify-graphql.middleware.js.map

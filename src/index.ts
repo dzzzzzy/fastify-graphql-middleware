@@ -1,2 +1,2 @@
-export { graphiQLFastify } from "./graphiql-fastify.middleware"
-export { graphQLFastify } from "./graphql-fastify.middleware"
+export { fastifyGraphiQL } from "./fastify-graphiql.middleware"
+export { fastifyGraphQL } from "./fastify-graphql.middleware"

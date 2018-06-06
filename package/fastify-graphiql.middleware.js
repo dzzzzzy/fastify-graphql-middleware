@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const apollo_server_module_graphiql_1 = require("apollo-server-module-graphiql");
 const url_1 = require("url");
-function graphiQLFastify(options) {
+function fastifyGraphiQL(options) {
     return (req, res, next) => {
         const query = req.url && url_1.parse(req.url, true).query;
         apollo_server_module_graphiql_1.resolveGraphiQLString(query, options, [res, req])
@@ -16,6 +16,6 @@ function graphiQLFastify(options) {
         });
     };
 }
-exports.graphiQLFastify = graphiQLFastify;
+exports.fastifyGraphiQL = fastifyGraphiQL;
 
-//# sourceMappingURL=graphiql-fastify.middleware.js.map
+//# sourceMappingURL=fastify-graphiql.middleware.js.map

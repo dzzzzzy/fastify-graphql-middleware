@@ -2,7 +2,7 @@ import { GraphQLOptions, HttpQueryError, runHttpQuery } from "apollo-server-core
 
 export type FastifyGraphQLOptionFunction = (req?: any, res?: any) => GraphQLOptions;
 
-export function graphQLFastify(options: FastifyGraphQLOptionFunction): (req?: any, res?: any, next?: any) => any {
+export function fastifyGraphQL(options: FastifyGraphQLOptionFunction): (req?: any, res?: any, next?: any) => any {
     if (!options) {
         throw new Error("Apollo Server requires options.");
     }
