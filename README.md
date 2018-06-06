@@ -1,13 +1,13 @@
-# graphql-fastify-middlewar
+# fastify-graphql-middleware
 
 ## Installation
 
 ```bash
 # npm
-npm install graphql-fastify-middlewar
+npm install fastify-graphql-middleware
 
 # yarn
-yarn add graphql-fastify-middlewar
+yarn add fastify-graphql-middleware
 ```
 
 ## Usage
